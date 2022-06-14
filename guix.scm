@@ -18,10 +18,12 @@
                                      name
                                      "-"
                                      version
-                                     ".tar.gz")))
+                                     ".tar.bz2")))
   (build-system gnu-build-system)
-  (native-inputs (list autoconf automake pkg-config texinfo))
-  (inputs (list guile-3.0-latest openjdk17))
+  (arguments
+   `(#:tests? #f))
+  (native-inputs (list autoconf automake pkg-config texinfo `(,openjdk17 "jdk") ))
+  (inputs (list guile-3.0-latest))
   (synopsis "Toy Repository for Code Challenge Solutions.")
   (description
    (string-append

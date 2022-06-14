@@ -48,7 +48,7 @@ info_TEXINFOS = doc/codechallenge-solutions.texi \
                 doc/fdl-1.3.texi
 
 ## Extra Files for Distribution
-EXTRA_DIST = Changelog \
+EXTRA_DIST =  Changelog.md \
               LICENSE \
               COPYING \
               NEWS \
@@ -60,9 +60,7 @@ EXTRA_DIST = Changelog \
               COPYING \
               m4/tar-edited.m4 \
               guix.scm \
-              pre-inst-env.in \
-              build-aux/test-driver.scm \
-              $(TESTS)
+              pre-inst-env.in
 
 ## Cleaning Up
 

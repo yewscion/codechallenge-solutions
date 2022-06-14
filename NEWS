@@ -1,6 +1,7 @@
-#+TITLE: Guile Cdr255 NEWS – history of user-visible changes
+#+TITLE: Codechallenge Solutions NEWS – history of user-visible changes
 #+STARTUP: content
-
+* 0.0.1
+* Postamble
 Copyright © (2022) Christopher Rodriguez <yewscion@gmail.com>
 
   Copying and distribution of this file, with or without modification,

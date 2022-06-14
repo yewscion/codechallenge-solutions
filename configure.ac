@@ -1,5 +1,5 @@
 dnl Process this file with autoconf
-AC_INIT([codechallenge-solutions],[0.0.1],[yewscion@gmail.com],[codechallenge-solutions-0.0.1.tar.bz2],[https://github.com/yewscion/codechallenge-solutions])
+AC_INIT([codechallenge-solutions],[0.0.1],[yewscion@gmail.com],[codechallenge-solutions],[https://github.com/yewscion/codechallenge-solutions])
 
 dnl General Project Variables
 AC_SUBST(HVERSION, "\"0.0.1\"")
