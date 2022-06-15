@@ -8,10 +8,15 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 ## [Unreleased]
 ### Added
 - Initial Project Files.
+- Java Implementation of "Minimum Jumps" Challenge.
+- `Challenges.md`, which is where I will archive the challenges I work on.
 
 ### Changed
 - Various minor changes to templates.
 - `guix.scm` now uses `local-file` to load the tarball.
+- For Java Code, package scheme is now `codechallenges.<challenge>`. May revisit
+  at some point.
+- Autotools for both Scheme and Java should work now.
 
 ### Removed
 - Unneeded temporary files from git repo.

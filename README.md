@@ -4,11 +4,12 @@
 
 **Code Challenges and Solutions I've Created for Them.**
 
-*Last Updated: 2022-06-13 (W24) 21:58:23 GMT*
+*Last Updated: 2022-06-15 (W24) 02:31:15 GMT*
 
 This Repo is a collection of the code challenges I've completed over time, and
 the solutions I've come up with for them. It's nothing serious, mostly just
-something for me to look at and smile.
+something for me to look at and smile. For a list of the challenges I've
+amassed, see the `Challenges.md` file!
 
 
 # Installation

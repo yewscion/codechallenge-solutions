@@ -64,7 +64,8 @@
 # This is where the long description goes.
 This Repo is a collection of the code challenges I've completed over time, and
 the solutions I've come up with for them. It's nothing serious, mostly just
-something for me to look at and smile.
+something for me to look at and smile. For a list of the challenges I've
+amassed, see the =Challenges.md= file!
 
 {{{installinfo}}}
 {{{useinfo}}}
