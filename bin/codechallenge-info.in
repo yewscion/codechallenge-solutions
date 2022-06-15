@@ -1,2 +1,10 @@
-#!/usr/bin/env bash
-echo "This is a placeholder for the real info script."
+#!/usr/bin/env -S guile -e main -s
+-e main -s
+!#
+
+(display "This is a placeholder for the real info script.")
+
+;; Local Variables:
+;; mode: scheme
+;; coding: utf-8
+;; End:

@@ -63,3 +63,5 @@ tmp
 /.version
 /doc/stamp-[0-9]
 /scripts/set-gitconfig
+/build/
+/codechallenge-solutions-*.tar.bz2

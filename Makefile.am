@@ -44,8 +44,7 @@ SUFFIXES = .scm .go
 ACLOCAL_AMFLAGS = -I m4
 
 ## Documentation Compilation
-info_TEXINFOS = doc/codechallenge-solutions.texi \
-                doc/fdl-1.3.texi
+info_TEXINFOS = doc/codechallenge-solutions.texi
 
 ## Extra Files for Distribution
 EXTRA_DIST =  Changelog.md \
@@ -73,18 +72,18 @@ clean-go:
 CLEANFILES =					\
   $(GOBJECTS)					\
   $(TESTS:tests/%.scm=%.log)			\
-  minimumJumps.jar				\
-  src/minimum-number-of-jumps/minimumJumps.class
+  minimumJumps.jar				
 ################################################################################
 # Define Inputs
 
 ## Define Java files (PREFIX: JAVAFILE)
-JAVAFILEMINIMUMJUMPS = $(srcdir)/src/minimum-number-of-jumps/minimumJumps.java
+JAVAFILEMINIMUMJUMPS = $(srcdir)/codechallenges/minimum-number-of-jumps/minimumJumps.java
 JAVASOURCES = $(JAVAFILEMINIMUMJUMPS)
 
 
 ## Define Guile files
-GUILESOURCES = $(srcdir)/src/minimum-number-of-jumps/minimum-jumps.scm
+GUILESOURCES = $(srcdir)/codechallenges/minimum-number-of-jumps/minimum-jumps.scm \
+               $(srcdir)/codechallenges/aoc2021/day-one/sonar-sweep.scm
 
 ## Don't Distribute, Don't Install
 nodist_noinst_SCRIPTS = pre-inst-env
@@ -93,7 +92,8 @@ nodist_noinst_SCRIPTS = pre-inst-env
 # Define Outputs
 
 ## Scripts that are not compiled
-bin_SCRIPTS = $(builddir)/bin/codechallenge-info
+bin_SCRIPTS = $(builddir)/bin/codechallenge-info \
+              $(builddir)/bin/sonar-sweep
 
 ## Jarfiles and Classes
 java_DATA = minimumJumps.jar

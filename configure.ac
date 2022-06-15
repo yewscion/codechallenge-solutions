@@ -2,10 +2,23 @@ dnl Process this file with autoconf
 AC_INIT([codechallenge-solutions],[0.0.1],[yewscion@gmail.com],[codechallenge-solutions],[https://github.com/yewscion/codechallenge-solutions])
 
 dnl General Project Variables
-AC_SUBST(HVERSION, "\"0.0.1\"")
-AC_SUBST(AUTHOR, "\"Christopher Rodriguez\"")
-AC_SUBST(COPYRIGHT, "'(2022)")
-AC_SUBST(LICENSE, agpl3+)
+AC_SUBST(LICENSE, ["Copyright (C) 2022 Christopher Rodriguez
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+"])
+_AM_SUBST_NOTMAKE([LICENSE])
 AC_CONFIG_SRCDIR([README.md])
 AC_CONFIG_AUX_DIR([build-aux])
 
@@ -30,7 +43,7 @@ AX_PROG_JAVAC
 AX_PROG_JAVA
 AX_PROG_JAR
 AX_PROG_JAVADOC
-AC_SUBST(MYJAVAPKG, "codechallenges")
+AC_SUBST(MYJAVAPKG, [codechallenges])
 
 dnl Checks for classes
 dnl AX_CHECK_RQRD_CLASS(org.whatever)
@@ -47,4 +60,5 @@ AC_PROG_MKDIR_P
 AC_CONFIG_FILES([Makefile])
 AC_CONFIG_FILES([pre-inst-env], [chmod +x pre-inst-env])
 AC_CONFIG_FILES([bin/codechallenge-info],[chmod +x bin/codechallenge-info])
+AC_CONFIG_FILES([bin/sonar-sweep],[chmod +x bin/sonar-sweep])
 AC_OUTPUT
