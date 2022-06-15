@@ -126,7 +126,7 @@ EXTRA_DIST += $(JAVASOURCES) $(GUILESOURCES) $(NOCOMP_SOURCES)
 # Added Jobs
 
 minimumJumps.jar: $(MYJAVAPKGDIR)/minimumJumps.class
-	$(JAR) cfe minimumJumps.jar $(MYJAVAPKG).minimumJumps -C $(MYJAVADIR) $(MYJAVAPKG)/minimumJumps.class
+	$(JAR) cfe minimumJumps.jar $(MYJAVAPKG).minimumjumps.minimumJumps -C $(MYJAVADIR) $(MYJAVAPKG)/minimumjumps/minimumJumps.class
 
 $(MYJAVAPKGDIR)/minimumJumps.class: $(JAVAFILEMINIMUMJUMPS)
 	$(MKDIR_P) $(MYJAVADIR)
