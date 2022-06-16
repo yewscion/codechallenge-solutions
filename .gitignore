@@ -65,3 +65,5 @@ tmp
 /scripts/set-gitconfig
 /build/
 /codechallenge-solutions-*.tar.bz2
+/sonar-sweep.csv
+/.deps/
