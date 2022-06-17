@@ -27,6 +27,13 @@
    where You can jump both forwards and backwards. I'd imagine those two
    combined might create more complex chains.
    
+2. [Advent of Code 2021][2] - 🤖👾❗
+
+    The "Advent of Code" is, unfortunately, somthing I only found out about in
+    2021 (and was unable to participate each day, due to other commitments. I
+    really only did the first challenge or two during the event. However, I plan
+    to finish it at some point!
+
 ## Other Notes
 
 If any of the challenges listed here go offline, I will attempt to add the
@@ -36,6 +43,6 @@ As I amass more and more challenges, it will be interesting to see where my
 proclivities lie!
 
 [1]: https://www.geeksforgeeks.org/minimum-number-of-jumps-to-reach-end-of-a-given-array/
-   
+[2]: https://adventofcode.com/2021
    
    

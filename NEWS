@@ -1,6 +1,20 @@
 #+TITLE: Codechallenge Solutions NEWS – history of user-visible changes
 #+STARTUP: content
-* 0.0.1
+* Changes in 0.0.1
+** New Features
+
+- =sonar-sweep= program now available; Implements the first day of AoC 2021 on
+  the command-line.
+- =minimumJumps-java= program now available; Feed it a bunch of numbers, and it
+  will jump through them according the challenge's rules.
+- Standard First Release Stuff like =guix.scm= (which currently depends on the
+  generated tarball from =make dist=), Project Definitions, and a proper start
+  to documentation.
+** Bugfixes
+
+- No prior release, so "bugs" don't exist yet per se.
+
+
 * Postamble
 Copyright © (2022) Christopher Rodriguez <yewscion@gmail.com>
 

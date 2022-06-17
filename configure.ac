@@ -45,6 +45,7 @@ AX_PROG_JAR
 AX_PROG_JAVADOC
 AC_SUBST(MYJAVAPKG, [codechallenges])
 
+AC_SUBST(JAVA_CC_OPTS, ["-encoding UTF-8"])
 dnl Checks for classes
 dnl AX_CHECK_RQRD_CLASS(org.whatever)
 
@@ -61,4 +62,5 @@ AC_CONFIG_FILES([Makefile])
 AC_CONFIG_FILES([pre-inst-env], [chmod +x pre-inst-env])
 AC_CONFIG_FILES([bin/codechallenge-info],[chmod +x bin/codechallenge-info])
 AC_CONFIG_FILES([bin/sonar-sweep],[chmod +x bin/sonar-sweep])
+AC_CONFIG_FILES([doc/version.texi])
 AC_OUTPUT

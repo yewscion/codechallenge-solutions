@@ -59,7 +59,9 @@ EXTRA_DIST =  Changelog.md \
               COPYING \
               m4/tar-edited.m4 \
               guix.scm \
-              pre-inst-env.in
+              pre-inst-env.in \
+              doc/version.texi.in \
+              doc/fdl-1.3.texi
 
 ## Cleaning Up
 
