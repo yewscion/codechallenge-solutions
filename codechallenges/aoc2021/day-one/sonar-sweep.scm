@@ -5,7 +5,7 @@
            delta-list
            count-match
            value-list->block-list)
-  :version (1 0 0))
+  :version (0 0 1))
 ;;; Library
 (define (file-of-numbers->list filename)
   "Takes a string which should reference a file on disk with numbers separated
