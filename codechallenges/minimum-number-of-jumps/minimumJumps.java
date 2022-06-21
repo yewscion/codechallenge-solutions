@@ -66,10 +66,12 @@ public class minimumJumps {
         int result = -1;
         int index = 0;
         int max = 0;
+        int currentValue = 0;
         
         for (final int number : array) {
-            if (number > 0 && myArray[number] >= max) {
-                max = myArray[number];
+            currentValue = number;
+            if (currentValue > 0 && currentValue >= max) {
+                max = currentValue;
                 result = index;
             }
             index++;
@@ -85,6 +87,9 @@ public class minimumJumps {
     private int nextIndex(final int index) {
         if (myArray[index] + index >= goalIndex)
             return goalIndex;
+        else if (myArray[index] <= 0) {
+            return -1;
+        }
         else
             return largestValueIndex(indicesWithinSteps(index));
     }
@@ -96,6 +101,8 @@ public class minimumJumps {
         while (index >= 0 && index < goalIndex) {
             staging.add(index);
             index = nextIndex(index);
+            if (index == -1)
+                return new int[] { -1 };
         }
         staging.add(goalIndex);
         
@@ -105,6 +112,8 @@ public class minimumJumps {
 
     private String buildOutput() {
         // Expected Format: 3 (1-> 3 -> 9 -> 9)
+        if (Arrays.binarySearch(minimumChain, -1) >= 0)
+            return "-1 (\u22A5)";
         final StringBuilder result = new StringBuilder();
         final int numberOfJumps = minimumChain.length - 1;
         result.append(numberOfJumps);
