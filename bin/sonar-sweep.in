@@ -2093,5 +2093,5 @@ Creates a fallback input file if it doesn't exist yet.
 ")
 ;; Local Variables:
 ;; mode: scheme
-;; coding: utf-8-unix
+;; coding: utf-8
 ;; End:
