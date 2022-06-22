@@ -21,8 +21,34 @@
                                      ".tar.bz2")))
   (build-system gnu-build-system)
   (arguments
-   `(#:tests? #f))
-  (native-inputs (list autoconf automake pkg-config texinfo `(,openjdk17 "jdk") ))
+   `(#:tests? #f
+     #:phases
+     (modify-phases
+      %standard-phases
+      (add-after
+       'install 'subjars
+       (lambda* (#:key outputs #:allow-other-keys)
+         (let* ((out (assoc-ref outputs "out"))
+                (bin (string-append out "/bin"))
+                (share (string-append out "/share")))
+           (substitute*
+            (string-append bin
+                           "/minimumJumps-java")
+            (("/usr/local/share/java/minimumJumps.jar")
+             (string-append share
+                            "/java/minimumJumps.jar"))))))
+      (add-before
+          'patch-usr-bin-file 'remove-script-env-flags
+        (lambda* (#:key inputs #:allow-other-keys)
+          (substitute*
+              (find-files "./bin")
+            (("#!/usr/bin/env -S guile \\\\\\\\")
+             "#!/usr/bin/env guile \\")
+            (("\"java")
+             (string-append "\"" (search-input-file inputs "/bin/java"))))))
+      (delete 'strip))))
+  (native-inputs (list autoconf automake pkg-config texinfo
+                       `(,openjdk17 "jdk")))
   (inputs (list guile-3.0-latest))
   (synopsis "Toy Repository for Code Challenge Solutions.")
   (description

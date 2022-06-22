@@ -62,5 +62,6 @@ AC_CONFIG_FILES([Makefile])
 AC_CONFIG_FILES([pre-inst-env], [chmod +x pre-inst-env])
 AC_CONFIG_FILES([bin/codechallenge-info],[chmod +x bin/codechallenge-info])
 AC_CONFIG_FILES([bin/sonar-sweep],[chmod +x bin/sonar-sweep])
+AC_CONFIG_FILES([bin/minimumJumps-java],[chmod +x bin/minimumJumps-java])
 AC_CONFIG_FILES([doc/version.texi])
 AC_OUTPUT

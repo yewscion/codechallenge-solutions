@@ -1,4 +1,4 @@
-#!/usr/bin/env -S guile -e main -s
+#!/usr/bin/env -S guile \\
 -e main -s
 !#
 (use-modules (codechallenges aoc2021 day-one sonar-sweep)
@@ -2093,5 +2093,5 @@ Creates a fallback input file if it doesn't exist yet.
 ")
 ;; Local Variables:
 ;; mode: scheme
-;; coding: utf-8
+;; coding: utf-8-unix
 ;; End:

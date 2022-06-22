@@ -61,7 +61,8 @@ EXTRA_DIST =  Changelog.md \
               guix.scm \
               pre-inst-env.in \
               doc/version.texi.in \
-              doc/fdl-1.3.texi
+              doc/fdl-1.3.texi \
+              doc/procedure-types.texi
 
 ## Cleaning Up
 
@@ -95,7 +96,8 @@ nodist_noinst_SCRIPTS = pre-inst-env
 
 ## Scripts that are not compiled
 bin_SCRIPTS = $(builddir)/bin/codechallenge-info \
-              $(builddir)/bin/sonar-sweep
+              $(builddir)/bin/sonar-sweep        \
+              $(builddir)/bin/minimumJumps-java
 
 ## Jarfiles and Classes
 java_DATA = minimumJumps.jar
@@ -117,9 +119,9 @@ guile_install_go_files = install-nobase_goDATA
 $(guile_install_go_files): install-nobase_modDATA
 
 ## Symlinks Go Here, along with other end-of-install changes
-install-data-hook:
-	$(LN_S) $(DESTDIR)$(javadir)/minimumJumps.jar $(DESTDIR)$(bindir)/minimumJumps-java
-	chmod +x $(DESTDIR)$(javadir)/minimumJumps.jar
+# install-data-hook:
+# 	$(LN_S) $(DESTDIR)$(javadir)/minimumJumps.jar $(DESTDIR)$(bindir)/minimumJumps-java
+# 	chmod +x $(DESTDIR)$(javadir)/minimumJumps.jar
 
 ## Sources and Extras
 EXTRA_DIST += $(JAVASOURCES) $(GUILESOURCES) $(NOCOMP_SOURCES)
