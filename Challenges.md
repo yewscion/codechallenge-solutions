@@ -14,7 +14,7 @@
 
 ## The Challenges
 
-1. [Minimum Jumps][1] - 🤖☕❗
+1. [Minimum Jumps][1] - ⭕☕❗
    
    The concept is simple, but there's a lot of complexity
    underneath it: Given an array of integers where the value stored at each
@@ -34,6 +34,9 @@
     really only did the first challenge or two during the event. However, I plan
     to finish it at some point!
 
+3. [Sparse Arrays][3]
+
+
 ## Other Notes
 
 If any of the challenges listed here go offline, I will attempt to add the
@@ -44,5 +47,4 @@ proclivities lie!
 
 [1]: https://www.geeksforgeeks.org/minimum-number-of-jumps-to-reach-end-of-a-given-array/
 [2]: https://adventofcode.com/2021
-   
-   
+[3]: https://www.hackerrank.com/challenges/sparse-arrays/problem

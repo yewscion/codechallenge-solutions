@@ -1,0 +1,26 @@
+begin Program.
+  read a line from the user,
+    expecting a number that's !> 1000 and !< 1.
+  this is how many lines to read as Strings.
+  repeat the following that many times:
+    read a line from the user,
+      expecting a string from 1 to 20 characters long.
+    append that to the Strings array.
+  read a line from the user,
+    expecting a number that's !> 1000 and !< 1.
+  this is how many lines to read as Queries,
+    and the count of Results.
+  repeat the following that many times:
+    read a line from the user,
+      expecting a string from 1 to 20 characters long.
+    append that to the Queries array.
+  set Result to 0.
+  for every member of Queries:
+    for every member of Strings:
+      when Strings ≡ Queries:
+        increment Result by 1.
+    append Result to Results.
+  for every member of Results:
+     print Results.
+     print newline.
+end Program.
